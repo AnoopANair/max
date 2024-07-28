@@ -1,0 +1,104 @@
+.navbar {
+    background-color: #ffd901;
+    padding: 1em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures it stays on top of other elements */
+}
+
+.menuButton {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    
+    
+}
+
+.navLinks {
+    display: none;
+    flex-direction: column;
+    margin-top: 1rem;
+    transition: max-height 0.3s ease-out;
+}
+
+.navLinks.show {
+    display: flex;
+    max-height: 500px; /* Adjust based on content size */
+}
+
+.navLink {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    font-size: 1em;
+}
+/* .navLink:hover{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 0.5rem 0;
+    font-size: 1em;
+
+} */
+
+.maxtitle {
+    /* margin-top: 1rem; */
+    /* font-size: 1.25rem; */
+    color: white;
+    /* border: 1px black solid; */
+    flex: 1;
+    justify-content: center;
+    /* background-color: antiquewhite; */
+
+}
+
+
+@media (min-width: 768px) {
+    .menuButton {
+        display: none; /* Hide menu button on larger screens */
+    }
+    
+    .navLinks {
+        flex-direction: row;
+        display: flex !important; /* Ensure navLinks are always displayed on larger screens */
+        margin-top: 0;
+    }
+
+    .navLink {
+        padding: 0 1rem; /* Horizontal padding for links */
+    }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 767px) {
+    .menuButton {
+        display: block; /* Show menu button on smaller screens */
+        position: sticky; top: 0;
+
+    }
+
+    .navLinks {
+        display: none; /* Hide navLinks by default on smaller screens */
+    }
+
+    .navLinks.show {
+        display: flex; /* Show navLinks when menu is open */
+    }
+}
+
+.topmenuON{
+    display: flex;
+}
+.topmenuOFF{
+    display: none;
+}
+.menutopstyle{
+    border: black 1px solid;
+    /* width: 200px; */
+    text-align: center;
+    flex: 1;
+}
