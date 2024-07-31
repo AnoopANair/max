@@ -1,7 +1,7 @@
 .navbar {
     background-color: #ffd901;
     padding: 1em;
-    color: white;
+    color: black;
     display: flex;
     flex-direction: column;
     position: sticky;
@@ -12,7 +12,7 @@
 .menuButton {
     background: none;
     border: none;
-    color: white;
+    color: black;
     font-size: 1.5rem;
     cursor: pointer;
     
@@ -32,7 +32,7 @@
 }
 
 .navLink {
-    color: white;
+    color: black;
     text-decoration: none;
     padding: 0.5rem 0;
     font-size: 1em;
@@ -48,7 +48,7 @@
 .maxtitle {
     /* margin-top: 1rem; */
     /* font-size: 1.25rem; */
-    color: white;
+    color: black;
     /* border: 1px black solid; */
     flex: 1;
     justify-content: center;
@@ -97,7 +97,7 @@
     display: none;
 }
 .menutopstyle{
-    border: black 1px solid;
+    /* border: black 1px solid; */
     /* width: 200px; */
     text-align: center;
     flex: 1;
